@@ -21,7 +21,7 @@
         <table>
             <tr><th>lp.</th> <th>numer rejsu</th> <th>czas</th> <th>kierunek</th> <th>status</th></tr>
             <?php
-                $sql_conn=mysqli_connect('localhost','root','','egzamin6');
+                $sql_conn=mysqli_connect('localhost','root','','egzamin');
                 $sql_quer=mysqli_query($sql_conn,'SELECT id,nr_rejsu,czas,kierunek,status_lotu FROM odloty ORDER BY czas ASC;');
                 while($wynik=mysqli_fetch_array($sql_quer))
                 {
