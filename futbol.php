@@ -48,7 +48,7 @@
         {
             $numer=$_POST['numer1'];
             $qwer='SELECT imie,nazwisko FROM zawodnik WHERE pozycja_id='.$numer.';';
-            $sql_conn=mysqli_connect('localhost','root','','egzamin1');
+            $sql_conn=mysqli_connect('localhost','root','','egzamin');
             $sql_qwer=mysqli_query($sql_conn,$qwer);
             echo "<ul>";
             while($wynik=mysqli_fetch_array($sql_qwer))
