@@ -15,7 +15,7 @@
 
     <?php
         $qwer='SELECT zespol1,zespol2,wynik,data_rozgrywki FROM rozgrywka WHERE zespol1 = "EVG";';
-        $sql_conn=mysqli_connect('localhost','root','','egzamin1');
+        $sql_conn=mysqli_connect('localhost','root','','egzamin');
         $sql_qwer=mysqli_query($sql_conn,$qwer);
         while($wynik=mysqli_fetch_array($sql_qwer))
         {
