@@ -50,7 +50,7 @@
                     $id=4;
                     break;
             }
-            $sql_conn=mysqli_connect('localhost','root','','egzamin2');
+            $sql_conn=mysqli_connect('localhost','root','','egzamin');
             $sql_quer=mysqli_query($sql_conn,'SELECT imie,nazwisko FROM zawodnik WHERE pozycja_id='.$id.';');
             echo "<ol>";
             while($wynik=mysqli_fetch_array($sql_quer))
