@@ -69,7 +69,7 @@
 
     <div id="liga">
         <?php
-            $sql_conn=mysqli_connect('localhost','root','','egzamin2');
+            $sql_conn=mysqli_connect('localhost','root','','egzamin');
             $sql_quer=mysqli_query($sql_conn,'SELECT zespol,punkty,grupa FROM liga ORDER BY punkty DESC;');
             while($wynik=mysqli_fetch_array($sql_quer))
             {
